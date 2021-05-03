@@ -1,11 +1,20 @@
 # Project2
+  
+// Author: Kaitlyn  Carboni
+// Class: C++ Programming
+// Professor Butkiewicz
+// Due: 5/2/2021
 
+#include<iostream>
+using namespace std;
+
+// Base (Parent) Class
 class Mammal {
   public: 
   
-  VOID NGNKG ()
+  void Color ()
   {
-    COUT << "FGEEG";
+    cout << "black";
   }
   
   void makeSound()
@@ -15,6 +24,7 @@ class Mammal {
 
 };
 
+//Derived (Child) Class
 class Whale : public Mammal
 {
   public:
@@ -25,6 +35,7 @@ class Whale : public Mammal
   }
 };
 
+//Derived (child) Class
 class Elephant : public Mammal
 {
   public:
@@ -32,9 +43,17 @@ class Elephant : public Mammal
   void makeSound()
   {
     cout << "Trumpeting";
-  }
+  };
+  
+  int main() {
+    Animal myAnimal;
+    myAnimal.makeSound();
+    cout << myAnimal.Color + " " + myAnimal.makeSound;
+    return 0;
+   }
 }
 
+// Base (parent) Class
 class Carnivore
 {
   public:
@@ -50,6 +69,7 @@ class Carnivore
   }
 };
 
+// Derived (child) Class
 class Lion : public Carnivore
 {
   public:
@@ -60,6 +80,7 @@ class Lion : public Carnivore
   }
 };
 
+// Derived (child) Class
 class Dog : public Carnivore
 {
   public:
@@ -67,5 +88,12 @@ class Dog : public Carnivore
   void makeSound()
   {
     cout << "Woof";
-  }
+  };
+  
+  int main() {
+    Animal myAnimal;
+    myAnimal.makeSound();
+    cout << myAnimal.color + " " + myAnimal.makeSound;
+    return 0;
+   }
 }
